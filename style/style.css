@@ -9,7 +9,7 @@ body {
 
 }
 main{
-    width: 1440px;
+    width: 1044px;
     margin:0 auto;
 }
 
@@ -202,17 +202,20 @@ color: rgb(255, 255, 255);
     justify-items: center;
     margin-top: 100px;
 }
+
 #habit-description{
     margin-bottom: 54px;
-     margin-top:14px;
+     margin-top:14px; 
 }
+
 .habits-img-container{
      display: grid;
      grid-template-columns: repeat(4,1fr);
+     justify-content: space-around;
 }
 .habits-img img{
-    width:270px;
-    height:270px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     background-color:red;
     gap:20px;
@@ -224,7 +227,28 @@ color: rgb(255, 255, 255);
     margin-top: 30px;
 }
 /* Change-Your-Habits-section-start */
-
+/* run-section-start */
+.run-section-container{
+    display: flex;
+    height: 371px;
+    margin-top: 100px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding:30px 32px 30px 52px;
+}
+#btn-join{
+    margin-top:34px;
+}
+.img-run img{
+    width: 366px;
+    height: 312px;
+    border:none;
+    border-radius: 18px;
+}
+/* run-section-start */
 
 
 
