@@ -70,7 +70,7 @@
         <section class="habits-container container">
             <h1 class="heading-title">Change Your Habits</h1>
             <p class="description" id="habit-description">We believe fitness should be accessible to everyone,
-                everywhere, regardless of income or access to a gym.</p>
+                everywhere, regardless of income or <br> access to a gym.</p>
             <div class="habits-img-container">
                 <div>
                     <div class="habits-img">
@@ -131,9 +131,9 @@
             <div class="exercises-img-container">
                 <div class="exrcises-img" id="img-1">
                     <img src="./images/exercise1.jpg" alt="">
-                    <div id="kausar">
+                    <!-- <div id="kausar">
                         <p class="description">Trainer</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="exrcises-img" id="img-2">
                     <img src="./images/exercise2.png" alt="">
@@ -174,13 +174,13 @@
         <div class="bmi-container">
             <div class="bmi-content">
                 <h1 class="heading-title">BMI Calculator</h1>
-                <p class="description">BMI (Body Mass Index) is a measure that uses your height and weight to <br>
+                <p class="description">BMI (Body Mass Index) is a measure that uses your height and <br> weight to 
                     determine if your weight is healthy.</p>
             </div>
         </div>
         <div class="bmi-calculator">
-            <div class="container">
-                <div class="bmi-chart">
+            <div class="container" id="bmi-content">
+                <div>
                     <h4 class="table-title">BMI Calculator Chart</h4>
                     <table class="table">
                         <tr>
@@ -203,16 +203,16 @@
 
                 </div>
                 <div>
-                    <h4 class="table-title">Calculate your BMI</h4>
-                    <p class="description">BMI (Body Mass Index) is a measure that uses your height <br> and weight to
+                    <h4 class="table-title"  id="bmi-heading">Calculate your BMI</h4>
+                    <p class="description" id="bmi-peragraph">BMI (Body Mass Index) is a measure that uses your height and weight to
                         determine if your weight is healthy</p>
                     <div class="input-content">
                         <div class="input-form">
-                            <input type="text" name="" id="" placeholder="Height/cm">
-                            <input type="text" name="" id="" placeholder="Weight/kg">
-                            <input type="text" name="" id="" placeholder="Age">
-                            <select>
-                                <option value="">sex</option>
+                            <input type="text" name=""  class="input-button" placeholder="Height/cm" >
+                            <input type="text" name="" class="input-button" placeholder="Weight/kg">
+                            <input type="text" name=""  class="input-button" placeholder="Age">
+                            <select class="input-button">
+                                <option value="" >sex</option>
                                 <option value="">Male</option>
                                 <option value="">Female</option>
                                 <option value="">Others</option>
@@ -222,9 +222,9 @@
                         </div>
                         <select id="activity">
                             <option value="">Select an activity factor</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
+                            <option value="">Nothing</option>
+                            <option value="">Nothing</option>
+                            <option value="">Nothing</option>
                         </select>
                     </div>
 
@@ -327,7 +327,7 @@
             </div>
 
         </div>
-        <div class="hr" >
+        <div class="hr">
             <hr>
 
         </div>

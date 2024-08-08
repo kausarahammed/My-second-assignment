@@ -36,6 +36,8 @@ body {
 }
 
 .btn-primary {
+    width:224px;
+    height:54px;
     font-size: 1.1rem;
     font-weight: 600px;
     padding: 16px 40px;
@@ -124,18 +126,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 167px; */
-
 }
 
 #text-style {
-    font-family: 'Miama', sans-serif;
-         
+    font-family: 'Miama', sans-serif;  
+    font-size:4.8rem;  
+    font-weight:12;  
+    font-style: italic;
 }
 
 .banner-content h1 {
     font-size: 4.8rem;
-    /* font-weight: 900px; */
+    font-weight: 900px;
     width: 520px;
     height: 241px;
     line-height: 80px;
@@ -146,6 +148,8 @@ body {
 }
 
 #download-btn {
+    width:224px;
+    height:54px;
     font-size: 1.1rem;
     font-weight: 600px;
     padding: 16px 40px;
@@ -235,7 +239,7 @@ body {
     color: rgba(239, 237, 232, 0.65);
 }
 
-/*get-body-section-end*/
+/*get-body-section-ends*/
 
 /* Change-Your-Habits-section-start */
 .habits-container {
@@ -271,7 +275,7 @@ body {
     margin-top: 30px;
 }
 
-/* Change-Your-Habits-section-start */
+/* Change-Your-Habits-section-ends*/
 
 /* run-section-start */
 .run-section-container {
@@ -297,7 +301,7 @@ body {
     border-radius: 18px;
 }
 
-/* run-section-start */
+/* run-section-ends*/
 
 /* Trainings and Exercises start */
 .exercises-section-container {
@@ -311,11 +315,11 @@ body {
     margin-top: 50px;
    position: relative;
 }
-#kausar{
+/* #kausar{
     position: absolute;
     margin-top:90px;
     margin-left:px;
-}
+} */
 
 .exrcises-img img{
     width: 100%;
@@ -366,48 +370,85 @@ body {
     margin: 80px auto;
 }
 
+#bmi-content{
+    display: flex;
+    justify-content: space-between;
+    gap:155px;
+}
+
 .bmi-calculator {
     width: 100% !important;
     margin: 0 auto;
     background-color: rgb(34, 34, 34);
     margin-bottom: 80px;
-    display: flex;
-    justify-content: space-between;
     padding: 50px;
 }
-
-.bmi-chart {}
 
 .table {
     width: 310px;
     height: 216px;
     text-align: left;
-
+}
+.table, tr, th, td{
+ 
+    border-collapse:collapse;
+    padding-left: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .table-title {
     color: rgb(255, 255, 255);
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     font-weight: 900;
-    margin-bottom: 50px;
-
+    margin-bottom:52px;
 }
 
 .input-content {
     width: 577px;
 }
+#bmi-heading{
+     margin-bottom: 14px;
+}
+#bmi-peragraph{
+    margin-bottom: 34px;
+}
 
 .input-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-
 }
+.input-button{
+    width: 282.5px;
+    height: 48px;
+    padding: 12px 40px 12px 20px;  
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px; 
+    border:none;
+}
+
+  .input-button, #activity, .input-form, text, option{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+  }
+  
 #activity{
-     width:100%;
-     padding:20px;
-     
+    width:100%;
+    padding:20px;
+    width: 577px;
+    height: 48px;
+    padding: 12px 20px 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border:none;
+    margin-bottom: 34px;
+       
 }
+#activity, option{
+    padding-right:40px;
+}
+ 
 /* BMI-Calculator-section-ends */
 
 /* Meet-Our-Team-section-start */
@@ -424,7 +465,7 @@ body {
  
 .img-container{
     width:1040px;
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(3,1fr);
    justify-content:space-around;
     text-align: center;
