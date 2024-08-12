@@ -2,15 +2,13 @@
 
 body {
     font-family: "Inter", sans-serif;
-
     margin: 0 auto;
     background-color: black;
     color: white;
-
 }
 
-.container{
-    width: 1044px;
+.container {
+    max-width: 1044px;
     margin: 0 auto;
 }
 
@@ -25,7 +23,6 @@ body {
     font-size: 3rem;
     font-weight: 900;
     color: rgb(255, 255, 255);
-
 }
 
 .description {
@@ -36,8 +33,8 @@ body {
 }
 
 .btn-primary {
-    width:224px;
-    height:54px;
+    width: 224px;
+    height: 54px;
     font-size: 1.1rem;
     font-weight: 600px;
     padding: 16px 40px;
@@ -48,17 +45,20 @@ body {
     cursor: pointer;
 }
 
+.btn-primary:hover {
+    background: rgb(179, 90, 76);
+    transition: all .2s;
+}
+
 /*background-style*/
 .bg-container {
     width: 100%;
     height: auto;
-    background: linear-gradient(180.00deg, rgba(17, 17, 17, 0.829), rgba(119, 119, 119, 0.11) 100%);
-    color: rgb(17, 17, 17) rgba(119, 119, 119, 0);
-
+    background: linear-gradient(to bottom, rgb(119, 119, 119, 0) 0%, rgb(36, 35, 35) 50%, rgb(119, 119, 119, 0)100%);
 }
 
 .bg-content {
-    width: 80%;
+    max-width: 1044px;
     margin: 0 auto;
 }
 
@@ -66,13 +66,12 @@ body {
     padding-right: 20px;
 }
 
-/*nav-bar-style*/
+/*nav-bar-style-start*/
 .nav-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 58px;
-
-
 }
 
 .nav-items {
@@ -86,14 +85,18 @@ body {
     display: flex;
     justify-items: center;
     align-items: center;
+}
 
+#Hamburger-icon {
+    display: none;
+    height: 30px;
+    width: 30px;
 }
 
 .title {
     font-size: 2.1rem;
     color: rgb(230, 83, 60);
     font-weight: 800px;
-
 }
 
 .nav-items p {
@@ -110,7 +113,7 @@ body {
 .btn-home {
     font-size: 18px;
     font-weight: 400px;
-    color:white;
+    color: white;
     width: 92px;
     height: 38px;
     border: 1px solid rgb(230, 83, 60);
@@ -118,8 +121,13 @@ body {
     border-radius: 46px;
     background: rgb(230, 83, 60);
     cursor: pointer;
-
 }
+
+.btn-home:hover {
+    background: rgba(230, 83, 60, 0.678);
+    transition: all .5s;
+}
+/*nav-bar-style-start*/
 
 /*get-body-section-start*/
 .banner-content-section {
@@ -129,9 +137,9 @@ body {
 }
 
 #text-style {
-    font-family: 'Miama', sans-serif;  
-    font-size:4.8rem;  
-    font-weight:12;  
+    font-family: 'Miama', sans-serif;
+    font-size: 4.8rem;
+    font-weight: 12;
     font-style: italic;
 }
 
@@ -148,8 +156,8 @@ body {
 }
 
 #download-btn {
-    width:224px;
-    height:54px;
+    width: 224px;
+    height: 54px;
     font-size: 1.1rem;
     font-weight: 600px;
     padding: 16px 40px;
@@ -162,20 +170,26 @@ body {
     cursor: pointer;
 }
 
-.banner-img{
+#download-btn:hover {
+    background: rgb(230, 83, 60);
+    transition: all 1s;
+    border: 1px solid rgb(230, 83, 60);
+}
+
+.banner-img {
     position: relative;
-    width:350px;
+    width: 350px;
     height: 580px;
 }
 
-.image{
-    position:absolute;
-    width:100%;
-    height:100%;
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .banner-card,
-.banner-card-1 { 
+.banner-card-1 {
     position: absolute;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -184,34 +198,33 @@ body {
     background: rgba(48, 48, 48, 0.418);
     display: flex;
     gap: 10px;
-    
+
 }
 
 .banner-card-1 {
     width: 193px;
     height: 98px;
-    top:23%;
-    left:64%;
+    top: 23%;
+    left: 64%;
     flex-direction: column;
-    justify-content: center; 
-    padding:30px 0px 16px 22px;
-    font-size:14px;
+    justify-content: center;
+    padding: 30px 0px 16px 22px;
+    font-size: 14px;
     line-height: 20px;
-    
+}
 
+#card-num {
+    text-align: left;
+    font-weight: 900px;
 }
-#card-num{
-    text-align:left;
-    font-weight: 900px; 
-}
-.banner-card{
+
+.banner-card {
     width: 193px;
-    height:96px;
-    top:420px;
-    left:-110px;
+    height: 96px;
+    top: 420px;
+    left: -110px;
     justify-content: center;
     align-items: center;
-    
 }
 
 #circle {
@@ -219,7 +232,17 @@ body {
     height: 40px;
     border-radius: 50%;
     background: rgb(230, 83, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#play-button {
+    display: none;
+}
+
+#youtube {
+    display: none;
 }
 
 .banner-img .card-title {
@@ -258,7 +281,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
-    
 }
 
 .habits-img img {
@@ -266,7 +288,7 @@ body {
     height: 190px;
     border-radius: 50%;
     gap: 20px;
-    border: none;
+    border: 4px solid rgba(41, 33, 33, 0.979);
 }
 
 .habits-item {
@@ -294,18 +316,23 @@ body {
     margin-top: 34px;
 }
 
-.img-run img {
+.img-run {
     width: 366px;
     height: 312px;
     border: none;
-    border-radius: 18px;
 }
 
+.img-run img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 18px;
+}
 /* run-section-ends*/
 
 /* Trainings and Exercises start */
 .exercises-section-container {
-    margin-top: 100px;  
+    margin-top: 100px;
 }
 
 .exercises-img-container {
@@ -313,52 +340,121 @@ body {
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(4, 1fr);
     margin-top: 50px;
-   position: relative;
 }
-/* #kausar{
-    position: absolute;
-    margin-top:90px;
-    margin-left:px;
-} */
 
-.exrcises-img img{
+.exrcises-img img {
     width: 100%;
     height: 100%;
-    
+}
+
+.Exercise-title {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 17px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+#Exercise-title-3 {
+    color: white;
+    margin-top: 210px;
+
+}
+
+#Exercise-title-1,
+#Exercise-title-5,
+#Exercise-title-6 {
+    margin-top: 220px;
+    position: absolute;
 }
 
 #img-1 {
     grid-column: 1/4;
     grid-row: 1/3;
-   
+    position: relative;
+}
+
+#Exercise-1,
+#Exercise-2,
+#Exercise-3,
+#Exercise-4,
+#Exercise-5,
+#Exercise-6 {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(6, 255, 210, 0.5);
+    top: 0;
+
+}
+
+#Exercise-title-1 {
+    color: rgb(0, 0, 0);
 }
 
 #img-2 {
     grid-column: 4/10;
     grid-row: 1/3;
-    filter: contrast(100%) rgba(255, 0, 0, 0.349);
+    position: relative;
+}
 
+#Exercise-2 {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+#Exercise-title-2 {
+    margin-top: 30px;
+    margin-left: 18px;
 }
 
 #img-3 {
     grid-column: 10/14;
     grid-row: 1/3;
+    position: relative;
+}
+
+#Exericise-3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #img-4 {
     grid-column: 1/6;
     grid-row: 3/5;
-    filter: brightness(70%);
+    position: relative;
+
+}
+
+#Exercise-4 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#Exercise-title-4 {
+    margin-left: 200px;
+    margin-top: 30px;
 }
 
 #img-5 {
     grid-column: 6/9;
     grid-row: 3/5;
+    position: relative;
+}
+
+#Exercise-5 {
+    background-color: rgba(66, 255, 0, 0.3);
 }
 
 #img-6 {
     grid-column: 9/14;
     grid-row: 3/5;
+    position: relative;
+}
+
+#Exercise-6 {
+    background-color: rgba(0, 71, 255, 0.3);
 }
 
 /* Trainings and Exercises ends */
@@ -370,10 +466,10 @@ body {
     margin: 80px auto;
 }
 
-#bmi-content{
+#bmi-content {
     display: flex;
     justify-content: space-between;
-    gap:155px;
+    gap: 155px;
 }
 
 .bmi-calculator {
@@ -389,9 +485,13 @@ body {
     height: 216px;
     text-align: left;
 }
-.table, tr, th, td{
- 
-    border-collapse:collapse;
+
+.table,
+tr,
+th,
+td {
+
+    border-collapse: collapse;
     padding-left: 18px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -400,16 +500,18 @@ body {
     color: rgb(255, 255, 255);
     font-size: 1.8rem;
     font-weight: 900;
-    margin-bottom:52px;
+    margin-bottom: 52px;
 }
 
 .input-content {
     width: 577px;
 }
-#bmi-heading{
-     margin-bottom: 14px;
+
+#bmi-heading {
+    margin-bottom: 14px;
 }
-#bmi-peragraph{
+
+#bmi-peragraph {
     margin-bottom: 34px;
 }
 
@@ -417,113 +519,144 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.input-button{
+
+#gender {
+    width: 92%;
+    border: none;
+    color: rgba(255, 255, 255, 0.3);
+    background: transparent;
+    font-size: 1rem;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: none;
+}
+
+#gender-container {
     width: 282.5px;
-    height: 48px;
-    padding: 12px 40px 12px 20px;  
+    padding: 12px 0px 12px 20px;
     background: rgba(255, 255, 255, 0.1);
     margin-right: 12px;
     margin-bottom: 12px;
-    border-radius: 8px; 
-    border:none;
+    border-radius: 8px;
+    border: none;
 }
 
-  .input-button, #activity, .input-form, text, option{
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-  }
-  
-#activity{
-    width:100%;
-    padding:20px;
-    width: 577px;
+#input-select-main {
+    width: 100%;
     height: 48px;
-    padding: 12px 20px 12px 20px;
+    padding: 12px 0px 12px 17px;
     background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 12px;
     border-radius: 8px;
-    border:none;
+    border: none;
     margin-bottom: 34px;
-       
 }
-#activity, option{
-    padding-right:40px;
+
+#activity {
+    width: 96%;
+    letter-spacing: 1px;
+    border: none;
+    color: rgba(255, 255, 255, 0.3);
+    background: transparent;
 }
- 
+
+.input-button {
+    width: 282.5px;
+    height: 48px;
+    padding: 12px 40px 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+.input-button,
+#activity,
+option {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+
+}
+
 /* BMI-Calculator-section-ends */
 
 /* Meet-Our-Team-section-start */
-.our-team-content{
-    display:flex;
+.our-team-content {
+    display: flex;
     flex-direction: column;
     text-align: center;
-} 
+}
 
-.our-team-content p{
-    margin-top:14px;
+.our-team-content p {
+    margin-top: 14px;
     margin-bottom: 58px;
 }
- 
-.img-container{
-    width:1040px;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-   justify-content:space-around;
+
+.img-container {
+    width: 1040px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
     text-align: center;
     border-radius: 18px;
-    padding:20px;
-    gap:20px;
+    padding: 20px;
+    gap: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 20px;
-    
+
 }
 
-.img-card{
-    width: 320px;
-    height: 320px;
+.img-card {
+    width: 100%;
+    height: 100%;
     border-radius: 18px;
-    color:rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.2);
     filter: brightness(85%);
-    background-position:contain;   
-   
-     
+    background-position: center;
 }
-.card-1{
-    width: 320px;
-    height: 320px;
+
+.card-1 {
+    width: 100%;
+    height: 100%;
     position: relative;
 }
-.card-content{
-    position:absolute;
-    top:80%;
-    left:5%;  
-    text-align:left;
-    
+
+.card-content {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    text-align: left;
 }
+
 /* Meet-Our-Team-section-ends */
 
 /* footer-section-start */
-footer{
-    background: rgba(255, 255, 255, 0.1);   
-    height:500px;    
-    
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    height: 510px;
+
 }
 
-.footer-content{
-    width:1044px;
-    margin:66px auto;
+.footer-content {
+    width: 1044px;
+    margin: 66px auto 0 auto;
     display: flex;
     justify-content: space-between;
-    padding-top:50px;
+    padding-top: 50px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 80px;
+
 }
-#footer-heading h1{
+
+#footer-heading h1 {
     color: rgb(230, 83, 60);
-    font-family: Inter;
     font-size: 4.375rem;
     font-weight: 800;
-     
     text-align: left;
 }
-#footer-heading p{
+
+#footer-heading p {
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
     font-size: 14px;
@@ -531,83 +664,411 @@ footer{
     line-height: 24px;
     letter-spacing: 0.3px;
     text-align: left;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-.list-items h3{
+.list-items h3 {
     color: rgb(255, 255, 255);
     font-size: 32px;
     font-weight: 700;
     line-height: 120%;
     text-align: left;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
- .list-items ul >li{
+.list-items ul>li {
     list-style: none;
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 120%;
     text-align: left;
-    margin-top:20px;
-    
- }
- .hr{
-    width:1044px;
-    margin:0 auto;
-    margin-top:50px;
-    color:red;
-    margin-bottom: 36px;
- 
- 
-   
-    
- }
- .kausar{
+    margin-top: 20px;
+
+}
+
+.copy-right {
     text-align: center;
- }
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    letter-spacing: 0.3px;
+    margin-top: 35px;
+}
 
 /* footer-section-ends */
 
-
-
-/*responsive mobile */
-/* @media screen and (max-width:576px){ 
-    .hide{
-        display: none;
-    }
+/*responsive-mobile */
+@media screen and (max-width:576px) {
     .nav-container {
         display: flex;
         justify-content: space-between;
         padding-top: 58px;
-    
-    
+        padding-left: 10px;
+        margin: 0 auto;
     }
-    
+
     .nav-items {
         display: none;
     }
-    
-    .title {
-        font-size: 2.1rem;
-        color: rgb(230, 83, 60);
-        font-weight: 800px;
-    
-     } */
 
-    /*get-body-section-start*/
-    /* .banner-content-section { 
-       flex-direction: column;
-    
+    #Hamburger-icon {
+        display: block;
     }
 
+    #play-button {
+        display: block;
+        width: 25px;
+        height: 25px;
+
+    }
+
+    .title {
+        margin-left: -12px;
+        padding-left: 0px;
+    }
+
+    /* get-body-section-start-responsive-for-mobile*/
+    .bg-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .banner-img {
+        margin-top: 47px;
+    }
+
+    .banner-content-section {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
 
     .banner-content h1 {
-        font-size: 3.8rem;
+        font-size: 2.1rem;
         font-weight: 700px;
-       
+        width: 265px;
+        height: auto;
+        line-height: 40px;
+        margin-top: 50px;
     }
 
-}  */
-    
+    #text-style {
+        font-family: 'Miama', sans-serif;
+        font-size: 1.8rem;
+        font-style: italic;
+    }
+
+    .description {
+        margin-top: 30px;
+    }
+
+    .btn-primary,
+    #download-btn {
+        width: 100%;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+    }
+
+    .btn-phone {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .banner-card {
+        top: 240px;
+        left: 0px;
+
+    }
+
+    .banner-card-1 {
+        top: 6%;
+        left: 52%;
+        width: 50%;
+    }
+
+    /* get-body-section-ends-responsive-for-mobile*/
+
+    /* change-your-habits-section-start-responsive-for-mobile*/
+    .habits-container {
+        width: 318px;
+        height: 124px;
+        margin-top: 0px;
+        position: relative;
+    }
+
+    .heading-title {
+        font-size: 2rem;
+    }
+
+    #description-phone {
+        margin-top: 6px;
+        margin-bottom: 35px;
+    }
+
+    .habits-img-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-around;
+    }
+
+    .habits-item {
+        font-size: 1.1rem;
+        font-weight: 600px;
+        margin-top: 30px;
+    }
+
+    /* change-your-habits-section-ends-responsive-for-mobile*/
+
+    /* run-section-start-responsive-for-mobile*/
+    .run-section-container {
+        flex-direction: column;
+        width: 95%;
+        height: 100%;
+        padding: 31px 33px 35px 33px;
+        margin-top: 1450px;
+    }
+
+    #btn-join {
+        margin-top: 34px;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .img-run {
+        margin-top: 31px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* run-section-ends-responsive-for-mobile*/
+
+    /* training-and-exercises-section-start-responsive-for-mobile*/
+    .exercises-section-container {
+        width: 90%;
+    }
+
+    #training-heading-content {
+        margin-right: 30px;
+    }
+
+    .exercises-img-container {
+        display: grid;
+        grid-template-columns: repeat(23, 1fr);
+    }
+
+    #img-2 {
+        grid-column: 12/24;
+        grid-row: 1/3;
+    }
+
+    #img-1 {
+
+        grid-column: 1/12;
+        grid-row: 1/3;
+    }
+
+    #img-4 {
+        grid-column: 1/11;
+        grid-row: 3/6;
+    }
+
+    #img-5 {
+        grid-column: 11/24;
+        grid-row: 3/6;
+    }
+
+    #img-3,
+    #img-6 {
+        display: none;
+    }
+
+    /* trainings-section-start-responsive-for-mobile*/
+    .Exercise-title {
+        font-size: 1.1rem;
+    }
+
+    #Exercise-title-5 {
+        margin-top: 50%;
+        margin-left: -6%;
+    }
+
+    #Exercise-title-4 {
+        margin-top: 65%;
+        margin-left: -10%;
+    }
+
+    #Exercise-title-2 {
+        margin-left: 0px;
+    }
+
+    #Exercise-title-1 {
+        margin-top: 60%;
+        margin-left: -10%;
+    }
+
+    /* trainings-section-ends-responsive-for-mobile*/
+
+    /* training-and-exercises-section-ends-responsive-for-mobile*/
+
+    /* bmi-calculator-section-start-responsive-for-mobile*/
+    .bmi-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 30px auto 32px;
+        padding-left: 20px;
+        padding-right: 23px;
+    }
+
+    #bmi-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bmi-calculator {
+        margin-bottom: 56px;
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    #calculator-content {
+        margin-top: -40px;
+    }
+
+    .table {
+        width: 310px;
+        height: 216px;
+    }
+
+    .table-title {
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    #bmi {
+        margin-top: 34px;
+        margin-bottom: 23px;
+    }
+
+    .input-content {
+        width: 100%;
+    }
+
+    #bmi-heading {
+        margin-top: -82px;
+        margin-bottom: -14px;
+    }
+
+    #bmi-peragraph {
+        margin-top: 30px;
+        margin-bottom: 34px;
+    }
+
+    .input-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding-top: 12px;
+    }
+
+    .input-button {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .input-button,
+    #activity,
+    option {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 1rem;
+    }
+
+    #gender {
+        width: 97%;
+    }
+
+    #gender-container {
+        width: 100%;
+        padding: 12px 13px 12px 20px;
+    }
+
+    #input-select-main {
+        margin-top: 12px;
+    }
+
+    #btn {
+        width: 224px;
+    }
+
+    /* bmi-calculator-section-ends-responsive-for-mobile*/
+
+    /* meet-our-team-section-start-responsive-for-mobile*/
+    #img-for-mobile {
+        display: none;
+    }
+
+    .our-team-container {
+        width: 95%;
+        margin-top: 76px;
+    }
+
+    .img-container {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-content {
+        line-height: 0px;
+    }
+
+    .card-1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .description {
+        margin-top: 15px;
+    }
+
+    /* meet-our-team-section-ends-responsive-for-mobile*/
+
+    /* footer-section-start-responsive-for-mobile*/
+    footer {
+        height: 100%;
+        margin-top: 66px;
+    }
+
+    .footer-content {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #footer-heading h1 {
+        margin-top: 20px;
+    }
+
+    #footer-heading p {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .list-items h3 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .copy-right {
+        padding-bottom: 50px;
+    }
+    /* footer-section-ends-responsive-for-mobile*/
+}

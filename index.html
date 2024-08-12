@@ -14,7 +14,6 @@
 
 <body>
     <header>
-
         <section class="bg-container">
             <div class="bg-content">
                 <!--nav-bar-section-start-->
@@ -27,9 +26,14 @@
                         <p>Service</p>
                         <p>Contact</p>
                         <p>About</p>
-                        <i class="fa-solid fa-bars"></i>
                     </div>
-
+                    <div id="Hamburger-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
                 </nav>
                 <!--nav-bar-section-ends-->
 
@@ -40,13 +44,20 @@
                             </span> & stay healthy</h1>
                         <p class="description">A huge selection of health and fitness content, healthy recipes <br> and
                             transformation stories to help you get fit and stay fit!</p>
-                        <button class="btn-primary">Join Club Now!</button>
-                        <button id="download-btn">Download App</button>
+                        <div class="btn-phone">
+                            <button class="btn-primary">Join Club Now!</button>
+                            <button id="download-btn">Download App</button>
+                        </div>
                     </div>
                     <div class="banner-img">
                         <img class="image" src="./images/Images 2.png" alt="">
                         <div class="banner-card">
                             <div id="circle">
+                                <svg id="play-button" xmlns="http://www.w3.org/2000/svg" fill="white"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                                </svg>
                             </div>
                             <div>
                                 <h1 class="card-title">350+</h1>
@@ -77,14 +88,14 @@
                         <img src="./images/image 3.png" alt="">
                     </div>
                     <h6 class="habits-item">Movement</h6>
-                    <p class="description">Regular physical exercise strengthens the muscles.</p>
+                    <p class="description" id="description-phone">Regular physical exercise strengthens the muscles.</p>
                 </div>
                 <div>
                     <div class="habits-img">
                         <img src="./images/image 2.png" alt="">
                     </div>
                     <h6 class="habits-item">Time</h6>
-                    <p class="description">
+                    <p class="description" id="description-phone">
                         Time is among the most invaluable assets in life.
                 </div>
                 <div>
@@ -92,7 +103,7 @@
                         <img src="./images/image 4.png" alt="">
                     </div>
                     <h6 class="habits-item">Practice</h6>
-                    <p class="description">
+                    <p class="description" id="description-phone">
                         Identify your goals for any task or activity you undertake.</p>
                 </div>
                 <div>
@@ -100,12 +111,11 @@
                         <img src="./images/image 5.png" alt="">
                     </div>
                     <h6 class="habits-item">Weight Loss</h6>
-                    <p class="description">
+                    <p class="description" id="description-phone">
                         Be cautious about mixing sugary drinks and processed.</p>
                 </div>
             </div>
         </section>
-
         <!-- Change-Your-Habits-section-ends -->
 
         <!-- run-section-start -->
@@ -117,71 +127,77 @@
                 <button class="btn-primary" id="btn-join">Join Now</button>
             </div>
             <div class="img-run">
-                <img src="./images/run.jpg" alt="">
+                <img src="./images/edit.jpg" alt="">
             </div>
         </section>
         <!-- run-section-end -->
 
         <!-- Trainings and Exercises start -->
         <section class="exercises-section-container container">
-            <h1 class="heading-title">Trainings and Exercises</h1>
-            <p class="description">
-                Training and exercise are crucial for a healthy body and mind. They improve physical <br> fitness and
-                enhance mental well-being </p>
+            <div id="training-heading-content">
+                <h1 class="heading-title">Trainings and Exercises</h1>
+                <p class="description">
+                    Training and exercise are crucial for a healthy body and mind. They improve physical <br> fitness
+                    and
+                    enhance mental well-being </p>
+            </div>
             <div class="exercises-img-container">
                 <div class="exrcises-img" id="img-1">
                     <img src="./images/exercise1.jpg" alt="">
-                    <!-- <div id="kausar">
-                        <p class="description">Trainer</p>
-                    </div> -->
+                    <div id="Exercise-1">
+                        <p class="Exercise-title" id="Exercise-title-1">Knee Exercise</p>
+                    </div>
                 </div>
                 <div class="exrcises-img" id="img-2">
                     <img src="./images/exercise2.png" alt="">
-                    <div class="card-content">
-                        <p class="description">Trainer</p>
+                    <div id="Exercise-2">
+                        <p class="Exercise-title" id="Exercise-title-2">Push up Exercise</p>
                     </div>
                 </div>
                 <div class="exrcises-img" id="img-3">
                     <img src="./images/exercise3.png" alt="">
-                    <div class="card-content">
-                        <p class="description">Trainer</p>
+                    <div id="Exericise-3">
+                        <p class="Exercise-title" id="Exercise-title-3">Gump Exercises
+                        </p>
                     </div>
                 </div>
                 <div class="exrcises-img" id="img-4">
                     <img src="./images/exercise4.png" alt="">
-                    <div class="card-content">
-                        <p class="description">Trainer</p>
+                    <div id="Exercise-4">
+                        <p class="Exercise-title" id="Exercise-title-4">Waist Exercises
+                        </p>
                     </div>
                 </div>
                 <div class="exrcises-img" id="img-5">
                     <img src="./images/exercise5.jpg" alt="">
-                    <div class="card-content">
-                        <p class="description">Trainer</p>
+                    <div id="Exercise-5">
+                        <p class="Exercise-title" id="Exercise-title-5">Lag Exercises
+                        </p>
                     </div>
                 </div>
                 <div class="exrcises-img" id="img-6">
                     <img src="./images/exercise6.jpg" alt="">
-                    <div class="card-content">
-                        <p class="description">Trainer</p>
+                    <div id="Exercise-6">
+                        <p class="Exercise-title" id="Exercise-title-6">Crunches Exercise
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-
         <!-- Trainings-and-Exercises-ends -->
 
         <!-- BMI-Calculator-section-start -->
         <div class="bmi-container">
-            <div class="bmi-content">
+            <div>
                 <h1 class="heading-title">BMI Calculator</h1>
-                <p class="description">BMI (Body Mass Index) is a measure that uses your height and <br> weight to 
+                <p class="description">BMI (Body Mass Index) is a measure that uses your height and <br> weight to
                     determine if your weight is healthy.</p>
             </div>
         </div>
         <div class="bmi-calculator">
             <div class="container" id="bmi-content">
-                <div>
-                    <h4 class="table-title">BMI Calculator Chart</h4>
+                <div id="calculator-content">
+                    <h4 class="table-title" id="bmi">BMI Calculator Chart</h4>
                     <table class="table">
                         <tr>
                             <th>BMI </th>
@@ -202,106 +218,106 @@
                     </table>
 
                 </div>
-                <div>
-                    <h4 class="table-title"  id="bmi-heading">Calculate your BMI</h4>
-                    <p class="description" id="bmi-peragraph">BMI (Body Mass Index) is a measure that uses your height and weight to
+                <div id="calculator-content">
+                    <h4 class="table-title" id="bmi-heading">Calculate your BMI</h4>
+                    <p class="description" id="bmi-peragraph">BMI (Body Mass Index) is a measure that uses your height
+                        and weight to
                         determine if your weight is healthy</p>
                     <div class="input-content">
                         <div class="input-form">
-                            <input type="text" name=""  class="input-button" placeholder="Height/cm" >
+                            <input type="text" name="" class="input-button" placeholder="Height/cm">
                             <input type="text" name="" class="input-button" placeholder="Weight/kg">
-                            <input type="text" name=""  class="input-button" placeholder="Age">
-                            <select class="input-button">
-                                <option value="" >sex</option>
-                                <option value="">Male</option>
-                                <option value="">Female</option>
-                                <option value="">Others</option>
-                            </select>
-
-
+                            <input type="text" name="" class="input-button" placeholder="Age">
+                            <div id="gender-container">
+                                <select id="gender">
+                                    <option value="">sex</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                    <option value="">Others</option>
+                                </select>
+                            </div>
                         </div>
-                        <select id="activity">
-                            <option value="">Select an activity factor</option>
-                            <option value="">Nothing</option>
-                            <option value="">Nothing</option>
-                            <option value="">Nothing</option>
-                        </select>
-                    </div>
 
-                    <button class="btn-primary">Calculate</button>
+                        <div id="input-select-main">
+                            <select id="activity">
+                                <option value="">Select an activity factor</option>
+                                <option value="">Nothing</option>
+                                <option value="">Nothing</option>
+                                <option value="">Nothing</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                    <button class="btn-primary" id="btn">Calculate</button>
                 </div>
 
             </div>
         </div>
-
         <!-- BMI-Calculator-section-ends -->
 
         <!-- Meet-Our-Team-section-start -->
         <section class="our-team-container container">
             <div class="our-team-content">
                 <h1 class="heading-title">Meet Our Team</h1>
-                <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless <br>
-                    of
-                    income or access to a gym.</p>
+                <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless
+                    <br>of
+                    income or access to a gym.
+                </p>
             </div>
             <div class="img-container">
-                <div class="card-1">
+                <div class="card-1" id="img-for-mobile">
                     <img class="img-card" src="./images/trainer1.png" alt="">
                     <div class="card-content">
-                        <h4>Jerome Bell</h4>
+                        <h3>Jerome Bell</h3>
                         <p class="description">Trainer</p>
                     </div>
-
                 </div>
                 <div class="card-1">
                     <img class="img-card" src="./images/trainer2.png" alt="">
                     <div class="card-content">
-                        <h4>Cameron Willi</h4>
+                        <h3>Cameron Williamson</h3>
                         <p class="description">Trainer</p>
                     </div>
                 </div>
                 <div class="card-1">
                     <img class="img-card" src="./images/trainer3.png" alt="">
                     <div class="card-content">
-                        <h4> Dearrell Steward</h4>
+                        <h3 id="ka">Darrell Steward</h3>
                         <p class="description">Trainer</p>
                     </div>
                 </div>
-                <div class="card-1">
+                <div class="card-1" id="img-for-mobile">
                     <img class="img-card" src="./images/trainer4.png" alt="">
                     <div class="card-content">
-                        <h4>Dianne Russell</h4>
+                        <h3>Dianne Russell</h3>
                         <p class="description">TrainerTrainer</p>
                     </div>
                 </div>
                 <div class="card-1">
                     <img class="img-card" src="./images/trainer5.png" alt="">
                     <div class="card-content">
-                        <h4>Dianne Russell</h4>
+                        <h3>Dianne Russell</h3>
                         <p class="description">Trainer</p>
                     </div>
                 </div>
                 <div class="card-1">
                     <img class="img-card" src="./images/trainer6.png" alt="">
                     <div class="card-content">
-                        <h4>Dianne Russell</h4>
+                        <h3>Dianne Russell</h3>
                         <p class="description">Trainer</p>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
         <!-- Meet-Our-Team-section-ends -->
-
     </main>
     <footer>
         <div class="footer-content">
             <div id="footer-heading">
                 <h1>Fitness</h1>
                 <p>We believe fitness should be accessible to everyone,<br>
-                    everywhere, regardless of income or access  to a gym. With<br>
+                    everywhere, regardless of income or access to a gym. With<br>
                     hundreds of professional workouts.
                 </p>
             </div>
@@ -327,12 +343,9 @@
             </div>
 
         </div>
-        <div class="hr">
-            <hr>
-
-        </div>
-        <div class="kausar">
-            All right reserved @Fitness 2024
+        <!--hr-line-section-->
+        <div class="copy-right">
+            <p>All right reserved @Fitness 2024</p>
         </div>
     </footer>
 </body>
