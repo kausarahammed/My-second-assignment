@@ -82,7 +82,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
     padding: 4px;
-    display: flex;
     justify-items: center;
     align-items: center;
 }
@@ -127,6 +126,7 @@ body {
     background: rgba(230, 83, 60, 0.678);
     transition: all .5s;
 }
+
 /*nav-bar-style-start*/
 
 /*get-body-section-start*/
@@ -138,7 +138,7 @@ body {
 
 #text-style {
     font-family: 'Miama', sans-serif;
-    font-size: 4.8rem;
+    font-size: 4.6rem;
     font-weight: 12;
     font-style: italic;
 }
@@ -328,6 +328,7 @@ body {
     border: none;
     border-radius: 18px;
 }
+
 /* run-section-ends*/
 
 /* Trainings and Exercises start */
@@ -358,7 +359,6 @@ body {
 #Exercise-title-3 {
     color: white;
     margin-top: 210px;
-
 }
 
 #Exercise-title-1,
@@ -385,7 +385,6 @@ body {
     min-height: 100%;
     background-color: rgba(6, 255, 210, 0.5);
     top: 0;
-
 }
 
 #Exercise-title-1 {
@@ -425,7 +424,6 @@ body {
     grid-column: 1/6;
     grid-row: 3/5;
     position: relative;
-
 }
 
 #Exercise-4 {
@@ -576,7 +574,6 @@ td {
 option {
     color: rgba(255, 255, 255, 0.3);
     font-size: 1rem;
-
 }
 
 /* BMI-Calculator-section-ends */
@@ -635,7 +632,6 @@ option {
 footer {
     background: rgba(255, 255, 255, 0.1);
     height: 510px;
-
 }
 
 .footer-content {
@@ -646,7 +642,12 @@ footer {
     padding-top: 50px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 80px;
+}
 
+#items-content {
+    display: flex;
+    align-items: center;
+    gap: 150px;
 }
 
 #footer-heading h1 {
@@ -778,7 +779,6 @@ footer {
     .banner-card {
         top: 240px;
         left: 0px;
-
     }
 
     .banner-card-1 {
@@ -823,7 +823,7 @@ footer {
     /* run-section-start-responsive-for-mobile*/
     .run-section-container {
         flex-direction: column;
-        width: 95%;
+        width: 90%;
         height: 100%;
         padding: 31px 33px 35px 33px;
         margin-top: 1450px;
@@ -846,6 +846,7 @@ footer {
     /* training-and-exercises-section-start-responsive-for-mobile*/
     .exercises-section-container {
         width: 90%;
+        margin-top:66px;
     }
 
     #training-heading-content {
@@ -882,8 +883,7 @@ footer {
     #img-6 {
         display: none;
     }
-
-    /* trainings-section-start-responsive-for-mobile*/
+    
     .Exercise-title {
         font-size: 1.1rem;
     }
@@ -906,10 +906,7 @@ footer {
         margin-top: 60%;
         margin-left: -10%;
     }
-
-    /* trainings-section-ends-responsive-for-mobile*/
-
-    /* training-and-exercises-section-ends-responsive-for-mobile*/
+/* training-and-exercises-section-ends-responsive-for-mobile*/
 
     /* bmi-calculator-section-start-responsive-for-mobile*/
     .bmi-container {
@@ -1013,7 +1010,7 @@ footer {
     }
 
     .our-team-container {
-        width: 95%;
+        width: 90%;
         margin-top: 76px;
     }
 
@@ -1053,6 +1050,266 @@ footer {
         flex-direction: column;
     }
 
+    #items-content {
+        display: contents;
+    }
+
+
+    #footer-heading p {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .list-items h3 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .copy-right {
+        padding-bottom: 50px;
+    }
+}
+
+/* footer-section-ends-responsive-for-mobile*/
+
+/*responsive-for-laptop*/
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .nav-container {
+        width: 75%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .nav-items {
+        display: flex;
+        gap: .5rem;
+    }
+
+    #Hamburger-icon {
+        display: none;
+    }
+
+    /* get-body-section-start-responsive-for-laptop*/
+    .banner-content-section {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 70px;
+    }
+
+    .banner-content-section {
+        gap: 50px;
+    }
+
+    .banner-card {
+        top: 60%;
+        left: -13%;
+    }
+
+    .banner-card-1 {
+        top: 6%;
+        left: 52%;
+        width: 50%;
+    }
+
+    /* get-body-section-ends-responsive-for-laptop*/
+
+    /* change-your-habits-section-start-responsive-for-laptop*/
+    .habits-container {
+        margin-top: 30px;
+    }
+
+    #description-phone {
+        margin-top: 6px;
+    }
+
+    .habits-img-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+        margin: 0 auto;
+        gap: 40px;
+    }
+
+    /* change-your-habits-section-ends-responsive-for-laptop*/
+
+    /* run-section-start-responsive-for-laptop*/
+    .run-section-container {
+        gap: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .heading-title {
+        font-size: 2.2rem;
+    }
+
+    /* run-section-ends-responsive-for-laptop*/
+
+    /* training-and-exercises-section-start-responsive-for-laptop*/
+    .exercises-section-container {
+        width: 90%;
+    }
+
+    .Exercise-title {
+        font-size: .9rem;
+    }
+
+    #Exercise-title-1,
+    #Exercise-title-5 {
+        margin-top: 90%;
+        margin-left: -8%;
+    }
+
+    #Exercise-title-3 {
+        margin-top: 68%;
+    }
+
+    #Exercise-title-4,
+    #Exercise-title-6 {
+        margin-top: 53%;
+        margin-left: -4%;
+    }
+
+    /* training-and-exercises-section-ends-responsive-for-laptop*/
+
+    /* bmi-calculator-section-start-responsive-for-laptop*/
+    .bmi-container {
+        margin: 30px auto 32px;
+    }
+
+    #bmi-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #calculator-content {
+        margin-top: -40px;
+    }
+
+    .table {
+        width: 310px;
+        height: 216px;
+    }
+
+    #bmi {
+        margin-top: 34px;
+        margin-bottom: 23px;
+    }
+
+    .input-content {
+        width: 100%;
+    }
+
+    #bmi-heading {
+        margin-top: -82px;
+        margin-bottom: -14px;
+    }
+
+    #bmi-peragraph {
+        margin-top: 30px;
+        margin-bottom: 34px;
+    }
+
+    .input-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding-top: 12px;
+    }
+
+    .input-button {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .input-button,
+    #activity,
+    option {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 1rem;
+    }
+
+
+    #gender-container {
+        width: 100%;
+        padding: 12px 13px 12px 20px;
+    }
+
+    #gender,
+    #activity {
+        width: 97%;
+    }
+
+    #input-select-main {
+        margin-top: 12px;
+    }
+
+    #btn {
+        width: 224px;
+    }
+
+    /* bmi-calculator-section-ends-responsive-for-laptop*/
+
+    /* meet-our-team-section-start-responsive-for-laptop*/
+
+    .our-team-container {
+        width: 95%;
+        margin-top: 76px;
+    }
+
+    .img-container {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-content {
+        line-height: 0px;
+    }
+
+    .img-card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-content h3 {
+        font-size: 1rem;
+        color: white;
+    }
+
+    .description {
+        margin-top: 8px;
+
+    }
+
+    /* meet-our-team-section-ends-responsive-for-laptop*/
+
+    /* footer-section-start-responsive-for-mobile*/
+    footer {
+        height: 100%;
+        margin-top: 66px;
+    }
+
+    .footer-content {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #items-content {
+        margin-top: 30px;
+
+    }
+
     #footer-heading h1 {
         margin-top: 20px;
     }
@@ -1070,5 +1327,6 @@ footer {
     .copy-right {
         padding-bottom: 50px;
     }
+
     /* footer-section-ends-responsive-for-mobile*/
 }
