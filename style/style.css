@@ -136,6 +136,10 @@ body {
     align-items: center;
 }
 
+.banner-content {
+    width: 65%;
+}
+
 #text-style {
     font-family: 'Miama', sans-serif;
     font-size: 4.6rem;
@@ -153,6 +157,8 @@ body {
 
 .banner-content p {
     margin: 24px 0px;
+    max-width: 80%;
+
 }
 
 #download-btn {
@@ -273,14 +279,19 @@ body {
 }
 
 #habit-description {
-    margin-bottom: 54px;
-    margin-top: 14px;
+    width:670px;
+    margin:14px auto 54px;
 }
 
 .habits-img-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
+}
+
+.habits-img-content p {
+    width: 231px;
+    margin: 0 auto;
 }
 
 .habits-img img {
@@ -301,7 +312,6 @@ body {
 
 /* run-section-start */
 .run-section-container {
-    display: flex;
     height: 371px;
     margin-top: 100px;
     border-radius: 18px;
@@ -310,6 +320,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px 32px 30px 52px;
+}
+
+.run-section-content p {
+    width: 443px;
 }
 
 #btn-join {
@@ -341,6 +355,10 @@ body {
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(4, 1fr);
     margin-top: 50px;
+}
+
+#training-heading-content p {
+    max-width: 671px;
 }
 
 .exrcises-img img {
@@ -462,6 +480,10 @@ body {
     display: flex;
     justify-content: center;
     margin: 80px auto;
+}
+
+.heading-content {
+    width: 660px;
 }
 
 #bmi-content {
@@ -659,13 +681,13 @@ footer {
 
 #footer-heading p {
     color: rgba(255, 255, 255, 0.5);
-    font-family: Inter;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.3px;
     text-align: left;
     margin-top: 20px;
+    width: 443px;
 }
 
 .list-items h3 {
@@ -744,6 +766,10 @@ footer {
         height: 100%;
     }
 
+    .banner-content {
+        width: 100%;
+    }
+
     .banner-content h1 {
         font-size: 2.1rem;
         font-weight: 700px;
@@ -751,6 +777,10 @@ footer {
         height: auto;
         line-height: 40px;
         margin-top: 50px;
+    }
+
+    .banner-content p {
+        max-width: 70%;
     }
 
     #text-style {
@@ -800,7 +830,9 @@ footer {
     .heading-title {
         font-size: 2rem;
     }
-
+    #habit-description{
+        width:100%;
+    }
     #description-phone {
         margin-top: 6px;
         margin-bottom: 35px;
@@ -829,6 +861,10 @@ footer {
         margin-top: 1450px;
     }
 
+    .run-section-content p {
+        width: 100%;
+    }
+
     #btn-join {
         margin-top: 34px;
         width: 100%;
@@ -846,7 +882,7 @@ footer {
     /* training-and-exercises-section-start-responsive-for-mobile*/
     .exercises-section-container {
         width: 90%;
-        margin-top:66px;
+        margin-top: 66px;
     }
 
     #training-heading-content {
@@ -883,7 +919,7 @@ footer {
     #img-6 {
         display: none;
     }
-    
+
     .Exercise-title {
         font-size: 1.1rem;
     }
@@ -906,7 +942,8 @@ footer {
         margin-top: 60%;
         margin-left: -10%;
     }
-/* training-and-exercises-section-ends-responsive-for-mobile*/
+
+    /* training-and-exercises-section-ends-responsive-for-mobile*/
 
     /* bmi-calculator-section-start-responsive-for-mobile*/
     .bmi-container {
@@ -916,6 +953,10 @@ footer {
         margin: 30px auto 32px;
         padding-left: 20px;
         padding-right: 23px;
+    }
+
+    .heading-content {
+        width: 100%;
     }
 
     #bmi-content {
@@ -1058,6 +1099,7 @@ footer {
     #footer-heading p {
         margin-top: 20px;
         font-size: 1rem;
+        width: 90%;
     }
 
     .list-items h3 {
@@ -1123,7 +1165,9 @@ footer {
     #description-phone {
         margin-top: 6px;
     }
-
+    #habit-description{
+        width:60%;
+    }
     .habits-img-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1139,6 +1183,10 @@ footer {
         gap: 40px;
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .run-section-content p {
+        max-width: 300px;
     }
 
     .heading-title {
@@ -1187,9 +1235,12 @@ footer {
         height: 100%;
     }
 
-
     #calculator-content {
         margin-top: -40px;
+    }
+
+    #bmi-peragraph {
+        width: 80%;
     }
 
     .table {
@@ -1289,9 +1340,7 @@ footer {
 
     .description {
         margin-top: 8px;
-
     }
-
     /* meet-our-team-section-ends-responsive-for-laptop*/
 
     /* footer-section-start-responsive-for-mobile*/
@@ -1307,7 +1356,6 @@ footer {
 
     #items-content {
         margin-top: 30px;
-
     }
 
     #footer-heading h1 {
